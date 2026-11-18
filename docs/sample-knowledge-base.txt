@@ -1,0 +1,19 @@
+Refund Policy
+
+Refunds are processed within 5 to 7 business days after the returned item is received and inspected. The money is credited to the original payment method. If a refund has not arrived after 10 business days, please contact support with your order ID.
+
+Password Reset
+
+To reset your password, click Forgot Password on the login page and enter your registered email. You will receive a reset link that is valid for 30 minutes. If the email does not arrive, check your spam folder.
+
+Order Tracking
+
+You can track your order from My Orders using your order ID. Orders usually ship within 2 business days and are delivered within 3 to 7 business days. If an order shows delivered but you did not receive it, raise a ticket within 48 hours.
+
+Payment Failed Troubleshooting
+
+If your payment fails but money is deducted, the amount is automatically reversed by the bank within 5 to 7 business days. If the amount is deducted twice, please raise a ticket with your transaction ID so our billing team can verify it.
+
+Application Login Problems
+
+If you cannot log in, make sure caps lock is off and try resetting your password. After 5 failed attempts the account is locked for 15 minutes. Clear your browser cache and try again if the page stays blank.

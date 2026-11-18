@@ -1,0 +1,43 @@
+services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: supportai
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpass}
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD:-rootpass}"]
+      interval: 5s
+      retries: 20
+
+  ai-service:
+    build: ./ai-service
+    environment:
+      USE_OLLAMA: ${USE_OLLAMA:-false}
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434/api/generate}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:3b}
+    volumes: [ai_data:/app/data]
+    ports: ["8000:8000"]
+
+  backend:
+    build: ./backend
+    depends_on:
+      mysql: { condition: service_healthy }
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/supportai?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpass}
+      JWT_SECRET: ${JWT_SECRET:-change-this-secret-change-this-secret-please-1234567890}
+      AI_URL: http://ai-service:8000
+      CORS_ORIGIN: http://localhost:3000
+    ports: ["8080:8080"]
+
+  frontend:
+    build:
+      context: ./frontend
+      args: { VITE_API_URL: http://localhost:8080 }
+    ports: ["3000:80"]
+
+volumes:
+  mysql_data:
+  ai_data:

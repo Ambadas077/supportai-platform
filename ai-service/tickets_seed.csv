@@ -1,0 +1,51 @@
+text,category
+My payment was deducted twice but the order is not confirmed,Payment
+Payment failed but money was debited from my bank,Payment
+Card declined during checkout even though I have balance,Payment
+I was charged twice for the same invoice,Payment
+UPI transaction stuck and amount deducted,Payment
+Unable to pay using net banking the page keeps loading,Payment
+I want a copy of my invoice for the last payment,Payment
+Wrong amount charged on my credit card,Payment
+Payment gateway shows error when I click pay now,Payment
+Subscription renewal charged without my permission,Payment
+I cannot login to my account it says invalid password,Account
+How do I reset my password,Account
+My account is locked after too many attempts,Account
+I did not receive the verification email,Account
+Please change the email address on my profile,Account
+I want to delete my account permanently,Account
+Someone logged into my account without permission,Account
+Unable to update my phone number in profile settings,Account
+Two factor authentication code is not working,Account
+How to deactivate my account temporarily,Account
+Where is my order it has not arrived yet,Orders
+My order is delayed past the delivery date,Orders
+Order shows delivered but I did not receive the package,Orders
+I received a damaged product,Orders
+Received the wrong item in my order,Orders
+How to track my order status,Orders
+I want to cancel my order before shipping,Orders
+Change the delivery address of my order,Orders
+Package was lost in transit,Orders
+Order confirmation email never came,Orders
+I want a refund for my returned product,Refunds
+Refund not received after ten days,Refunds
+What is your refund policy,Refunds
+Refund was approved but money is not in my account,Refunds
+How long does a refund take to process,Refunds
+Request money back for cancelled subscription,Refunds
+Partial refund received instead of full amount,Refunds
+I returned the item but no refund yet,Refunds
+Can I get a refund for a defective item,Refunds
+Refund status shows pending for two weeks,Refunds
+The app crashes when I open it,Technical
+Website is not loading and shows error 500,Technical
+Page shows blank screen after login,Technical
+Mobile app keeps freezing on the checkout screen,Technical
+File upload fails with an error message,Technical
+Notifications are not working on my phone,Technical
+The search feature returns no results,Technical
+Cannot download my invoice the button does nothing,Technical
+App is very slow and lags,Technical
+Error message appears when I submit the form,Technical
